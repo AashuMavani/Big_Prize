@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Big Prize</string>
+    <string name="privacy_policy"><u>Privacy policy</u></string>
+    <string name="app_terms" translatable="false"><u>Terms &amp; Conditions</u></string>
+
+    <string name="update">Update</string>
+    <string name="give_us_a_rating">Give us a rating</string>
+    <string name="rate_us_please_message">Rate us, please? It would take only a few seconds and it would mean a whole lot to us!</string>
+    <string name="enter_your_feedback">Enter your feedback</string>
+    <string name="oh_we_need_to_do_better">Oh! We need to do better. We will come back later.</string>
+    <string name="rate_us">Rate Us</string>
+    <!--AdMob Id-->
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="tap_to_exit">Tap again to exit</string>
+    <string name="visit_again">Visit again to earn more.</string>
+    <string name="thank_you_for_using">Thank You For Using Big Prize!</string>
+    <string name="titleTaskOffer">All Task (Easy &amp; Fast Earning)</string>
+    <string name="txtDisclaimer">Disclaimer</string>
+    <string name="txtTaskDetails">How to claim reward?</string>
+    <string name="underlined_claim_reward_text"><u>How to claim reward?</u></string>
+    <string name="point_1">Invite your friends</string>
+    <string name="point_2">Registered</string>
+    <string name="point_3">Completed first task</string>
+    <string name="share_your_referral_code">Share the unique referral code to your friends.</string>
+    <string name="earn_points">For every friend who joins Reward Wallet using your referral code, you will received 100 points.</string>
+    <string name="unlimited_reward">After your friend completes the one task the points will credit to your wallet</string>
+
+    <string name="facebook_app_id">1448031092812393</string>
+    <string name="facebook_client_token">c931860b2973bdcd30ee05e089f30bf7</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="animations_array">
+        <item>Alpha (Default)</item>
+        <item>Scale</item>
+        <item>Set (Scale + Alpha)</item>
+    </string-array>
+    <string name="title_activity_big_brain">Big_BrainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+    <string name="title_activity_big_braintrainer">Big_BraintrainerActivity</string>
+    <string name="action_settings">Settings</string>
+
+
+</resources>

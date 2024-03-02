@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relSlider"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtTitleHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/big_rubik_bold"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/dim_15"
+        android:singleLine="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/textSize_16"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/_3sdp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvIconlist"
+        android:layout_marginLeft="@dimen/dim_3"
+        android:layout_marginRight="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

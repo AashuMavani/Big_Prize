@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutMain"
+    android:layout_width="@dimen/_58sdp"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/dim_5"
+        android:layout_marginTop="@dimen/dim_5"
+        android:layout_marginEnd="@dimen/dim_5"
+        android:layout_marginBottom="@dimen/dim_5"
+        android:clickable="false"
+        android:elevation="@dimen/dim_2"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/big_bg_login_points"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvDay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:clickable="false"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/big_rubik_medium"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/dim_5"
+                android:paddingTop="@dimen/dim_5"
+                android:paddingRight="@dimen/dim_5"
+                android:paddingBottom="@dimen/dim_6"
+                android:text="Day 15"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_12" />
+
+            <RelativeLayout
+                android:id="@+id/layoutPoints"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:background="@drawable/big_coin_bg"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/lottieLight"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    app:lottie_autoPlay="false"
+                    app:lottie_loop="true"
+                    android:visibility="gone"
+                    app:lottie_rawRes="@raw/big_active_login_light" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/ivCoin"
+                        android:layout_width="@dimen/dim_15"
+                        android:layout_height="@dimen/dim_15"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/big_coin1" />
+
+                    <TextView
+                        android:id="@+id/tvPoints"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dim_3"
+                        android:layout_toRightOf="@id/ivCoin"
+                        android:fontFamily="@font/big_rubik_medium"
+                        android:includeFontPadding="false"
+                        android:text="1"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_16"
+                        android:visibility="visible" />
+
+                     <LinearLayout
+
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content">
+                         <ImageView
+                             android:id="@+id/ivDone"
+                             android:layout_width="@dimen/dim_32"
+                             android:layout_height="@dimen/dim_32"
+                             android:layout_centerInParent="true"
+                             android:layout_gravity="center"
+                             android:elevation="@dimen/dim_2"
+                             android:src="@drawable/big_ic_done"
+                             android:visibility="gone"
+                             app:tint="@color/white" />
+                     </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/ivLock"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/dim_5"
+        android:layout_marginTop="@dimen/dim_5"
+        android:layout_marginEnd="@dimen/dim_5"
+        android:layout_marginBottom="@dimen/dim_5"
+        android:background="@drawable/big_bg_black_transparent"
+        android:elevation="@dimen/dim_2"
+        android:padding="@dimen/dim_10"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/big_ic_lock"
+        android:visibility="gone"
+        app:tint="@color/white" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/viewTouch"
+        android:layout_width="@dimen/dim_50"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dim_45"
+        android:adjustViewBounds="true"
+        android:elevation="@dimen/dim_2"
+        android:visibility="gone"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/big_touch"
+        app:lottie_speed="2" />
+
+</RelativeLayout>

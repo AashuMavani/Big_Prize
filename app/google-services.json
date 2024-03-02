@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "74606298364",
+    "project_id": "big-prize-be444",
+    "storage_bucket": "big-prize-be444.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:74606298364:android:f87f72fbc25757b6038379",
+        "android_client_info": {
+          "package_name": "com.app.bigprize"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "74606298364-uku703h0g4vbcjvdh0u6r5ciujeraedh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQ8ek6pZCAM4LkOBpCGvkN_YuyMlxUTHY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "74606298364-uku703h0g4vbcjvdh0u6r5ciujeraedh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

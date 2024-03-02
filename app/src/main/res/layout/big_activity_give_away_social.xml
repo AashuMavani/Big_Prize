@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:layoutDirection="ltr">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@drawable/big_header_bg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="@dimen/dim_32"
+                android:layout_height="@dimen/dim_32"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dim_5"
+                android:src="@drawable/big_ic_back"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/layoutPoints"
+                android:layout_toRightOf="@id/ivBack"
+                android:fontFamily="@font/big_rubik_bold"
+                android:gravity="left"
+                android:includeFontPadding="false"
+                android:paddingLeft="@dimen/dim_10"
+                android:text="Giveaway"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_18"
+                tools:ignore="MissingPrefix" />
+
+            <LinearLayout
+                android:id="@+id/layoutPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dim_10"
+                android:layout_marginRight="@dimen/dim_10"
+                android:layout_toLeftOf="@id/ivHistory"
+                android:background="@drawable/big_bg_wallet_balance"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dim_5"
+                android:paddingTop="@dimen/dim_5"
+                android:paddingRight="@dimen/dim_8"
+                android:paddingBottom="@dimen/dim_5">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="@dimen/dim_20"
+                    android:layout_height="@dimen/dim_20"
+                    android:layout_gravity="center_vertical"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/big_coin" />
+
+                <TextView
+                    android:id="@+id/tvPoints"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/big_rubik_medium"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/dim_5"
+                    android:text="100"
+                    android:textColor="@color/black_font"
+                    android:textSize="@dimen/textSize_16"
+                    tools:ignore="MissingPrefix" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivHistory"
+                android:layout_width="@dimen/dim_32"
+                android:layout_height="@dimen/dim_32"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dim_15"
+                android:padding="@dimen/dim_2"
+                android:src="@drawable/big_ic_history" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/layoutTopAds"
+                    layout="@layout/big_layout_top_banner_ads"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <WebView
+                    android:id="@+id/webNote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    tools:ignore="WebViewLayout" />
+
+
+
+                <LinearLayout
+                    android:id="@+id/layoutContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dim_15"
+                    android:layout_marginVertical="@dimen/dim_10"
+                    android:background="@drawable/big_green_border"
+                    android:elevation="@dimen/dim_5"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dim_3">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_120"
+                        android:layout_marginTop="@dimen/dim_10"
+                        android:paddingVertical="5dp"
+                        android:src="@drawable/big_givaway_bg" />
+
+                    <EditText
+                        android:id="@+id/etCouponCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginHorizontal="@dimen/_15sdp"
+                        android:background="@drawable/big_edittext_bg"
+                        android:elevation="@dimen/dim_1"
+                        android:fontFamily="@font/big_rubik_bold"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center"
+                        android:hint="Enter Giveaway Code"
+                        android:includeFontPadding="false"
+                        android:inputType="textNoSuggestions|textCapCharacters"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/dim_15"
+                        android:paddingRight="@dimen/dim_15"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/light_grey_font"
+                        android:textSize="@dimen/textSize_22"
+                        tools:ignore="MissingPrefix" />
+
+                    <RelativeLayout
+                        android:id="@+id/layoutButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_gravity="center_horizontal">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnClaimNow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dim_40"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/dim_15"
+                            android:layout_marginTop="@dimen/dim_10"
+                            android:layout_marginRight="@dimen/dim_15"
+                            android:layout_marginBottom="@dimen/dim_3"
+                            android:background="@drawable/big_selector_button_gradient"
+                            android:backgroundTint="@color/light_green"
+                            android:fontFamily="@font/big_rubik_bold"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:paddingLeft="@dimen/dim_30"
+                            android:paddingRight="@dimen/dim_30"
+                            android:text="Claim Now"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_16" />
+
+                        <View
+                            android:id="@+id/viewShine"
+                            android:layout_width="@dimen/dim_40"
+                            android:layout_height="@dimen/dim_50"
+                            android:background="@drawable/big_bg_shine"
+                            android:elevation="@dimen/dim_2"
+                            android:rotation="22" />
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnHowToClaim"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/dim_0_5"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="@string/underlined_claim_reward_text"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/textSize_16"
+                        android:textStyle="italic" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dim_5">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvSocialPlatforms"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            tools:itemCount="10"
+                            tools:listitem="@layout/big_item_giveaway_app_icons" />
+                    </HorizontalScrollView>
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="@dimen/dim_10"-->
+<!--                        android:layout_marginRight="@dimen/dim_5"-->
+<!--                        android:layout_marginBottom="@dimen/dim_5"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="@dimen/dim_30"-->
+<!--                            android:layout_height="@dimen/dim_30"-->
+<!--                            android:layout_gravity="center_vertical"-->
+<!--                            android:scaleX="-1"-->
+<!--                            android:scaleY="1"-->
+<!--                            android:src="@drawable/left_finger" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_vertical"-->
+<!--                            android:layout_marginLeft="@dimen/dim_5"-->
+<!--                            android:fontFamily="@font/rubik_medium"-->
+<!--                            android:gravity="left"-->
+<!--                            android:includeFontPadding="false"-->
+<!--                            android:text="Note: Perform below steps to get daily reward."-->
+<!--                            android:textColor="@color/red"-->
+<!--                            android:textSize="@dimen/textSize_13"-->
+<!--                            tools:ignore="MissingPrefix" />-->
+<!--                    </LinearLayout>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvNote"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:layout_margin="@dimen/dim_5"-->
+<!--                        android:background="@drawable/box_background"-->
+<!--                        android:fontFamily="@font/rubik_regular"-->
+<!--                        android:gravity="left"-->
+<!--                        android:includeFontPadding="false"-->
+<!--                        android:lineSpacingExtra="@dimen/dim_1"-->
+<!--                        android:lineSpacingMultiplier="1.3"-->
+<!--                        android:padding="@dimen/_5sdp"-->
+<!--                        android:text="Step1: Go to our social media page\nStep2: Copy giveaway code\nStep3: Paste giveaway code here &amp; Claim  reward"-->
+<!--                        android:textColor="@color/black_font"-->
+<!--                        android:textSize="@dimen/textSize_13" />-->
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutGiveawayCodes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/titleLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#085E56"
+                        android:fontFamily="@font/big_rubik_bold"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:paddingLeft="@dimen/dim_15"
+                        android:paddingTop="@dimen/dim_8"
+                        android:paddingRight="@dimen/dim_15"
+                        android:paddingBottom="@dimen/dim_8"
+                        android:text="Copy &amp; Apply Giveaway Code"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_14" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvGiveawayCodeList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                       android:layout_marginVertical="@dimen/dim_5"
+                        android:nestedScrollingEnabled="false"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        tools:listitem="@layout/big_item_giveaway_codes" />
+                </LinearLayout>
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/ivLottieNoData"
+                    android:layout_width="@dimen/dim_240"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/dim_15"
+                    android:adjustViewBounds="true"
+                    android:visibility="gone"
+                    app:lottie_autoPlay="false"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/big_no_data_animation"
+                    tools:ignore="MissingClass" />
+
+                <LinearLayout
+                    android:id="@+id/layoutAds"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/lblLoadingAds"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_240"
+                        android:layout_marginLeft="@dimen/dim_15"
+                        android:layout_marginTop="@dimen/dim_2"
+                        android:layout_marginRight="@dimen/dim_15"
+                        android:layout_marginBottom="@dimen/dim_15"
+                        android:background="@drawable/big_rectangle_white"
+                        android:elevation="@dimen/dim_3"
+                        android:fontFamily="@font/big_rubik_medium"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="Loading Ads..."
+                        android:textColor="@color/grey_font"
+                        android:textSize="@dimen/textSize_16" />
+
+                    <FrameLayout
+                        android:id="@+id/fl_adplaceholder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dim_15"
+                        android:layout_marginTop="@dimen/dim_2"
+                        android:layout_marginRight="@dimen/dim_15"
+                        android:layout_marginBottom="@dimen/dim_15"
+                        android:background="@drawable/big_rectangle_white"
+                        android:elevation="@dimen/dim_3" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

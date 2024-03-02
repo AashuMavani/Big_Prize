@@ -1,0 +1,5 @@
+
+rootProject.name = "Big Prize"
+include ':app'
+include ':library'
+include ':Wheel'
